@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="cursobootstrap.png" alt="Curso Html - De cero a Experto">
+</p>
+
 # CURSO-BOOTSTRAP
 
 # Curso Bootstrap 5: De 0 a Principiante
