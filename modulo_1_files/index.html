@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <hr>
+    <!-- Contenedor con máximo ancho fijo según breakpoint -->
+    <div class="container" style="background-color: rgb(154, 156, 156);">
+        <h1 class="fw-bold">Contenedor con máximo ancho fijo según breakpoint</h1>
+    </div>
+
+    <hr>
+    <!-- Contenedor que ocupa todo el ancho disponible -->
+    <div class="container-fluid" style="background-color: rgb(92, 99, 109);">
+        <h2></h2>
+        <h1 class="fw-bold">Contenedor que ocupa todo el ancho disponible</h1>
+    </div>
+    <hr>
+    <!-- Columnas -->
+    <div class="container">
+        <h1 class="fw-bold">Columnas</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                Columna 1
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                Columna 2
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                Columna 3
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Tipografía -->
+    <div class="container">
+        <h1 class="fw-bold">Tipografía</h1>
+        <h1>Encabezado h1</h1>
+        <h2>Encabezado h2</h2>
+        <h3>Encabezado h3</h3>
+        <h4>Encabezado h4</h4>
+        <h5>Encabezado h5</h5>
+        <h6>Encabezado h6</h6>
+    </div>
+    <hr>
+    <!-- Clases de texto -->
+    <div class="container">
+        <h2 class="fw-bold">Clases de texto</h2>
+        <p class="lead">Texto destacado</p>
+        <p class="text-primary">Texto con color primario</p>
+        <p class="text-secondary">Texto secundario</p>
+        <p class="fw-bold">Texto en negrita</p>
+        <p class="fst-italic">Texto en cursiva</p>
+    </div>
+    <hr>
+    <!-- Botones -->
+    <div class="container">
+        <h2 class="fw-bold">Botones</h2>
+        <button class="btn btn-primary">Primario</button>
+        <button class="btn btn-secondary">Secundario</button>
+        <button class="btn btn-success">Éxito</button>
+        <button class="btn btn-danger">Peligro</button>
+        <button class="btn btn-warning">Advertencia</button>
+        <button class="btn btn-info">Información</button>
+    </div>
+    <hr>
+    <!-- Tamaños de botones -->
+    <div class="container">
+        <h2 class="fw-bold">Tamaños de botones</h2>
+        <button class="btn btn-primary btn-lg">Botón grande</button>
+        <button class="btn btn-primary">Botón normal</button>
+        <button class="btn btn-primary btn-sm">Botón pequeño</button>
+    </div>
+    <hr>
+    <!-- Formulario básico -->
+    <div class="container">
+        <h2 class="fw-bold">Formulario básico</h2>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="remember">
+                <label class="form-check-label" for="remember">Recordarme</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <hr>
+    <!-- Barra de navegación -->
+    <div class="container">
+        <h2 class="fw-bold">Barra de navegación</h2>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <hr>
+    <!-- Breadcrumbs -->
+    <div class="container">
+        <h2 class="fw-bold">Breadcrumbs</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
+                <li class="breadcrumb-item active">Datos</li>
+            </ol>
+        </nav>
+    </div>
+
+    <hr>
+    <!-- Modal -->
+    <div class="container">
+        <h2 class="fw-bold">Modal</h2>
+        <!-- Botón para abrir el modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Abrir modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Título del Modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Contenido del modal
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Carrusel -->
+    <div class="container">
+        <h2 class="fw-bold">Carrusel</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/600x400?text=Hello+World" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/600x400?text=Hola+Mundo" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/600x400?text=Bonjour+le+Monde" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <hr>
+    <!-- Utilidades Flexbox - Dirección flex  -->
+    <div class="container">
+        <h2 class="fw-bold">Utilidades Flexbox - Dirección flex</h2>
+        <div class="d-flex flex-row">...</div>
+        <div class="d-flex flex-row-reverse">...</div>
+        <div class="d-flex flex-column">...</div>
+        <div class="d-flex flex-column-reverse">...</div>
+    </div>
+    <hr>
+    <!-- Utilidades Flexbox - Justify Content  -->
+    <div class="container">
+        <h2 class="fw-bold">Utilidades Flexbox - Justify Content</h2>
+        <div class="d-flex justify-content-start">start...</div>
+        <div class="d-flex justify-content-end">end...</div>
+        <div class="d-flex justify-content-center">center...</div>
+        <div class="d-flex justify-content-between">between...</div>
+        <div class="d-flex justify-content-around">around...</div>
+    </div>
+    <hr>
+    <!-- Espaciado -->
+    <div class="container">
+        <h2 class="fw-bold">Espaciado</h2>
+        <!-- Margin -->
+        <div class="m-1">Margin 0.25rem</div>
+        <div class="m-2">Margin 0.5rem</div>
+        <div class="m-3">Margin 1rem</div>
+        <div class="m-4">Margin 1.5rem</div>
+        <div class="m-5">Margin 3rem</div>
+
+        <!-- Padding -->
+        <div class="p-1">Padding 0.25rem</div>
+        <div class="p-2">Padding 0.5rem</div>
+        <div class="p-3">Padding 1rem</div>
+        <div class="p-4">Padding 1.5rem</div>
+        <div class="p-5">Padding 3rem</div>
+    </div>
+    <hr>
+    <!-- Clases responsive -->
+    <div class="container">
+        <h2 class="fw-bold">Clases responsive</h2>
+        <!-- Elementos que se ocultan/muestran según el breakpoint -->
+        <div class="d-none d-md-block">Visible solo en MD y superior</div>
+        <div class="d-md-none">Oculto en MD y superior</div>
+
+        <!-- Imágenes responsive -->
+        <img src="https://placehold.co/600x400?text=Hello+World" class="img-fluid" alt="Imagen responsive">
+
+        <!-- Tablas responsive -->
+        <div class="table-responsive">
+            <table class="table">
+                ...
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
